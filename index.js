@@ -34,9 +34,13 @@ const run = async () => {
     ) {
       console.info('Notifying watchers.')
       alarm({
-        subject: 'Endpoint Outage Detected',
-        message: `IPFS outtage detected. Our ipfs watch bot tried downloading a file ${threshold} times and failed. This can mean all our apps are malfunctioning and is an emergency that needs attention.
+        subject:
+          'A fatal flaw requires critical attention from the team urgently.',
+        message: `IPFS outtage detected.
         <br>
+        <br>Our IPFS watch bot tried downloading a file ${threshold} times and failed.
+        <br>
+        <br>This means all our apps are not working and is an emergency that needs immediate attention.
         <br>
         Endpoint checked: ${process.env.ENDPOINT_URL}
         `,
