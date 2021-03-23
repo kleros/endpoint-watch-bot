@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon -r dotenv-safe/config index.js",
+    "prod": "node -r dotenv-safe/config index.js",
     "lint:js": "eslint '**/*.js'",
     "lint:secrets": "secretlint '**/*'",
     "lint": "yarn lint:js && yarn lint:secrets",
